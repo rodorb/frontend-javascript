@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloWorld KC</title>
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <input type="text" placeholder="Escribe aqui algo" value="Valor por defecto" />
+    <!-- <h1>TITULO 1</h1>
+    <p class="title another-class">Ejemplo Parrafo</p>
+    <main>
+        <section class="main-section">
+            <article>
+                <div>
+                    <p>Soy un Parrafo</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="https://www.somosxbox.com/wp-content/uploads/2021/12/godfrey-elden-ring.jpg?mrf-size=m" alt="">
+            </article>
+        </section>
+    </main> -->
+    <!-- Una forma -->
+    <script>
+        const p1Element = document.createElement('p');
+        p1Element.textContent = 'Parrafo nuevo creado con document.createElement("p")';
+
+        const image1Element = document.createElement('img');
+        // image1Element.src = 'https://www.somosxbox.com/wp-content/uploads/2021/12/godfrey-elden-ring.jpg?mrf-size=m';
+        image1Element.setAttribute('src', 'https://www.somosxbox.com/wp-content/uploads/2021/12/godfrey-elden-ring.jpg?mrf-size=m');
+        const mainElement = document.querySelector('main');
+        mainElement.appendChild(p1Element);
+        mainElement.appendChild(image1Element);
+        //Se carga todos los nodos que tuviera antes mainElement, solo poniendo lo que se le indique a innerHTML
+        // mainElement.innerHTML = '<p> Soy un parrafo destructor </p>';
+    </script>
+    <!-- Otra forma, lo carga como modulo de javascript -->
+    <!-- <script type="module" src="index-module.js"></script> -->
+    <!-- Otra forma, lo carga como un javascript plano,
+    las variables de este script estarían accesibles desde otro 
+javascript plano -->
+    <!-- <script src="index.js"></script> -->
+
+</body>
+
+</html>

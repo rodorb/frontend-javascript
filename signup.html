@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shared/notification/notification.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <main>
+        <section class="signup">
+            <div class="notification">
+            </div>
+            <form id="signupForm">
+                <label for="textInput">Username:</label>
+                <input type="text" name="textInput" id="textInput" placeholder="User name" required>
+
+                <label for="passwordInput">Password:</label>
+                <input type="password" name="passwordInput" id="passwordInput" placeholder="Password" required>
+
+                <label for="passwordMatchInput">Password:</label>
+                <input type="password" name="passwordMatchInput" id="passwordMatchInput" placeholder="Confirm your password" required>
+
+                <button type="submit" value="" disabled>Create user</button>
+
+            </form>
+        </section>
+    </main>
+    <script type="module" src="./signunp/signup.js"></script>
+</body>
+
+</html>
